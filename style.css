@@ -1,0 +1,117 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+.prod{
+    margin-top: 10%;
+    display: flex;
+    width: 600px;
+}
+.prodImg{
+    width: 50%;
+    height: 600px;
+}
+.mainImg{
+    height: 400px;
+    width: 300px;
+    border-left: 2px solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.gray{
+    color: hsl(228, 12%, 48%);
+}
+.type{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    margin: 8%;
+    font-weight: 500;
+}
+.info{
+    background-color: hsl(0, 0%, 100%);
+    height: 400px;
+    width: 300px;
+    border-left: 2px solid transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.name{
+    margin: 8%;
+    font-family: serif;
+    font-size: 35px;
+}
+.about{
+    font-size: 15px;
+}
+.price{
+    margin: 8%;
+    margin-top: -30px;
+    display: flex;
+    font-size: 20px;
+}
+.cyan{
+    color: hsl(158, 36%, 37%);
+}
+.mrp{
+    font-size: 14px;
+    margin-top: 35px;
+    margin-left: 20px;
+    text-decoration: line-through;
+    text-decoration-color: hsl(228, 12%, 48%);
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    border: 2px solid hsl(158, 36%, 37%);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+    margin: 8%;
+    margin-top: -30px;
+    width: 240px;
+    height: 35px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+button:active{
+    background-color: hsl(212, 21%, 14%);
+}
+.cartImg{
+    width: 12px;
+    height: 12px;
+}
+@media (max-width:400px) {
+    button{
+        width: 210px;
+    }
+    .prod{
+        flex-direction: column;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .info{
+        margin-top: -335px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 250px;
+    }
+    .mainImg{
+        width: 250px;
+        margin-left: -32px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+@media (max-width:350px) {
+    .mainImg{
+        margin-left: -47px;
+    }
+}
